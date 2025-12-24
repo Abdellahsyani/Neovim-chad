@@ -21,4 +21,7 @@ map("n", "<leader>o", "<cmd>vsplit<CR>", { desc = "Vertical Split" })
 
 -- Close current window with Space + c
 map("n", "<leader>c", "<cmd>q<CR>", { desc = "Close window" })
+
+-- 2. Delete the default NvChad mapping for Space + h
+vim.keymap.del("n", "<leader>h")
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
