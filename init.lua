@@ -1,3 +1,15 @@
+-- SILENCE THE 0.11 NOISE
+vim.g.lspconfig_silent = true
+local original_notify = vim.notify
+vim.notify = function(msg, ...)
+  if type(msg) == "string" and (msg:match "deprecated" or msg:match "0.11") then
+    return
+  end
+  return original_notify(msg, ...)
+end
+
+-- Your existing NvChad bootstrap code follows...
+
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
