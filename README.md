@@ -1,11 +1,11 @@
 # ⚡ My Custom NvChad Configuration
 
-This is my personal Neovim setup based on NvChad. It is optimized for C++ development and fast window management.
+This is my personal Neovim setup based on NvChad. It is optimized for C/C++, html, css, javascript development and fast window management.
 
 ## 📦 Installation
 
 ### Prerequisites
-- Neovim 0.11.0 or later
+- Neovim 0.10.0 or later
 - Git
 - A [Nerd Font](https://www.nerdfonts.com/) (optional, but recommended)
 - Ripgrep (optional, for telescope live grep)
