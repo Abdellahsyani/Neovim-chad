@@ -22,38 +22,38 @@ return {
   },
 
   --copilot
-  {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = function()
-      require("copilot").setup({
-        suggestion = {
-          enabled = true,
-          auto_trigger = true,
-          keymap = {
-            accept = "<C-l>",
-            next = "<M-]>",
-            prev = "<M-[>",
-            dismiss = "<C-]>",
-          },
-        },
-        panel = {
-          enabled = false,
-        },
-        filetypes = {
-          yaml = true,
-          markdown = true,
-          help = false,
-          gitcommit = true,
-          c = true,
-          cpp = true,
-          lua = true,
-          python = true,
-        },
-      })
-    end,
-  },
+--   {
+--     "zbirenbaum/copilot.lua",
+--     cmd = "Copilot",
+--     event = "InsertEnter",
+--     config = function()
+--       require("copilot").setup({
+--         suggestion = {
+--           enabled = true,
+--           auto_trigger = true,
+--           keymap = {
+--             accept = "<C-l>",
+--             next = "<M-]>",
+--             prev = "<M-[>",
+--             dismiss = "<C-]>",
+--           },
+--         },
+--         panel = {
+--           enabled = false,
+--         },
+--         filetypes = {
+--           yaml = true,
+--           markdown = true,
+--           help = false,
+--           gitcommit = true,
+--           c = true,
+--           cpp = true,
+--           lua = true,
+--           python = true,
+--         },
+--       })
+--     end,
+--   },
 }
 
 -- test new blink
